@@ -1,0 +1,24 @@
+{
+  "name": "single-submit",
+  "version": "1.0.0-alpha-1",
+  "description": "The Single Submit JS library provides a straightforward way to enhance button functionality in server-side applications.",
+  "main": "single-submit.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/priyashpatil/single-submit-js.git"
+  },
+  "keywords": [
+    "single submit",
+    "prevent duplicate submission",
+    "button progress"
+  ],
+  "author": {
+    "name": "Priyash Patil",
+    "url": "https://priyashpatil.studio/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/priyashpatil/single-submit-js/issues"
+  },
+  "homepage": "https://github.com/priyashpatil/single-submit-js#readme"
+}
