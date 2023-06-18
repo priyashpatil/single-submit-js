@@ -1,0 +1,3 @@
+# Single Submit JS
+
+The Single Submit JS library provides a straightforward way to enhance button functionality in server-side applications. When performing tasks such as file uploads or server-side processing, it can often take some time to receive a response from the server. By utilizing Single Submit JS, you can improve the user experience by displaying progress indicators and preventing duplicate submissions until a response is received from the server. This ensures a smoother and more efficient interaction between the user and the application.
