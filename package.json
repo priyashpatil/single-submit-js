@@ -2,7 +2,10 @@
   "name": "single-submit",
   "version": "1.0.0-alpha-1",
   "description": "The Single Submit JS library provides a straightforward way to enhance button functionality in server-side applications.",
-  "main": "single-submit.js",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "vite build"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/priyashpatil/single-submit-js.git"
@@ -20,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/priyashpatil/single-submit-js/issues"
   },
-  "homepage": "https://github.com/priyashpatil/single-submit-js#readme"
+  "homepage": "https://github.com/priyashpatil/single-submit-js#readme",
+  "devDependencies": {
+    "vite": "^4.3.9"
+  }
 }
