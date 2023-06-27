@@ -9,7 +9,7 @@ The Single Submit JavaScript library offers a convenient solution for improving 
 To begin using Single Submit JS, you can install it by including the following CDN script tag in your HTML:
 
 ```html
-<script src="https://cdn.priyashpatil.studio/products/single-submit/releases/single-submit-1.0.0-alpha_1.min.js"
+<script src="https://cdn.priyashpatil.studio/products/single-submit/releases/single-submit-1.0.0-alpha_2.min.js"
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 ```
 
