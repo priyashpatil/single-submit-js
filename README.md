@@ -4,8 +4,6 @@ receive a response from the server. By incorporating Single Submit JS, you can e
 processing indicator and preventing duplicate submissions until a response is received from the server. This results in
 a smoother and more efficient interaction between the user and the application.
 
-> Limitation: only supports Bootstrap 5.
-
 ## Usage
 
 To get started, you can install Single Submit JS by including the following CDN script tag in your HTML:
@@ -19,11 +17,11 @@ After adding the script to your page, you have two options for applying Single S
 
 1. Form Submission:
 
-   Add the CSS class `form-single-submit` to your form and include the `data-loading-text` attribute to specify the text
+   Add the CSS class `form-single-submit` to your form and optionally include the `data-loading-text` attribute to specify the text
    that will be displayed during processing. For example:
 
    ```html
-   <form method="post" class="form-single-submit" data-loading-text="Submitting...">
+   <form method="post" class="form-single-submit">
        <!-- Your form fields here -->
        <button type="submit">Submit</button>
    </form>
