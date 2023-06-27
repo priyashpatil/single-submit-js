@@ -10,31 +10,22 @@
           integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 <body>
-<div class="container py-5">
-    <h1>Single Submit Js Example</h1>
-    <div class="row">
-        <div class="col-md-6">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dolor illum inventore ipsa sequi.
-                Consectetur consequatur dignissimos earum enim expedita harum, illum nostrum omnis quaerat quas sit
-                temporibus ut vitae?</p>
-            <button class="btn btn-warning btn-single-submit">Submit</button>
+<div class="container py-5" style="max-width: 420px;">
+    <h1 class="h3">Single Submit Js Example</h1>
+    <form method="post" data-ss-type="single-submit-form" data-ss-loading-text="Submitting...">
+        <div class="mb-3">
+            <label class="form-label" for="email">Email <span class="text-danger">*</span></label>
+            <input type="email" class="form-control" name="email" id="email" required>
         </div>
-        <div class="col-md-6">
-            <form method="post" class="form-single-submit" data-loading-text="Submitting...">
-                <div class="mb-3">
-                    <label class="form-label" for="email">Email <span class="text-danger">*</span></label>
-                    <input type="email" class="form-control" name="email" id="email" required>
-                </div>
 
-                <div class="mb-3">
-                    <label class="form-label" for="password">Password <span class="text-danger">*</span></label>
-                    <input type="password" class="form-control" name="password" id="password" required>
-                </div>
-
-                <button class="btn btn-success" type="submit">Login</button>
-            </form>
+        <div class="mb-3">
+            <label class="form-label" for="password">Password <span class="text-danger">*</span></label>
+            <input type="password" class="form-control" name="password" id="password" required>
         </div>
-    </div>
+
+<!--        <button class="btn btn-success" type="submit">Login</button>-->
+        <button class="btn btn-primary" data-ss-type="single-submit-button">Login</button>
+    </form>
 </div>
 <script src="lib/index.js"></script>
 </body>
