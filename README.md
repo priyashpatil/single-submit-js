@@ -4,6 +4,15 @@ The Single Submit JavaScript library offers a convenient solution for improving 
 
 <div style="text-align: center"><img src="marketing/single-submit.gif" alt="Single Submit Example"></div>
 
+## Features
+
+- [x] Provides support for native HTML form validation.
+- [x] No reliance on any CSS framework.
+- [x] Compact file size of less than 1KB.
+- [x] Quick setup with CDN link.
+- [ ] Upcoming feature: Additional process indicators.
+- [ ] Upcoming feature: Customization support for process indicators.
+
 ## Quick Start
 
 To begin using Single Submit JS, you can install it by including the following CDN script tag in your HTML:
