@@ -17,7 +17,6 @@ smoother and more efficient interaction between the user and the application.
 - [x] Compact file size of less than 1KB.
 - [x] Quick setup with CDN link.
 - [x] Recently added: Additional process indicators.
-- [ ] Upcoming feature: Customization support for process indicators.
 
 ## Quick Start
 
