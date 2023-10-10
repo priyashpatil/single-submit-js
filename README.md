@@ -23,7 +23,7 @@ smoother and more efficient interaction between the user and the application.
 To start using Single Submit JS, include the following CDN script tag in your HTML:
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/priyashpatil/single-submit-js@1.0.0/dist/single-submit.min.js"
+<script src="https://cdn.jsdelivr.net/gh/priyashpatil/single-submit-js@1.0.1/dist/single-submit.min.js"
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 ```
 
