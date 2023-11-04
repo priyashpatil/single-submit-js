@@ -2,7 +2,10 @@ class SingleSubmit {
     private options: SingleSubmitOptions;
     static init: (options?: SingleSubmitOptions) => SingleSubmit;
 
-    constructor(options: SingleSubmitOptions = {}) {
+    constructor(options: SingleSubmitOptions = {
+        containerClass: 'spinner-container-single-submit',
+        spinnerClass: 'spinner-border-single-submit'
+    }) {
         this.options = options;
         this.initialize();
     }
@@ -17,46 +20,25 @@ class SingleSubmit {
 
         // Customize CSS styles using options
         style.textContent = `
-        .spinner-container-single-submit {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            ${this.options.containerStyles || ''}
-        }
-        .spinner-border-single-submit {
-            height: 1rem;
-            width: 1rem;
-            border-radius: 50%;
-            animation: 0.75s linear infinite spinner-border-single-submit;
-            border: 0.2rem solid currentColor;
-            border-right-color: transparent;
-            ${this.options.borderStyles || ''}
-        }
-        .spinner-grow-single-submit {
-            height: 1rem;
-            width: 1rem;
-            animation: 0.75s linear infinite spinner-grow-single-submit;
-            background-color: currentColor;
-            opacity: 0;
-            border-radius: 50%;
-            ${this.options.growStyles || ''}
-        }
-        @keyframes spinner-border-single-submit {
-            to {
-                transform: rotate(360deg);
-            }
-        }
-        @keyframes spinner-grow-single-submit {
-            0% {
-                transform: scale(0);
-            }
-            50% {
-                opacity: 1;
-                transform: none;
-            }
-        }
-    `;
-
+           .spinner-container-single-submit {
+                display: inline-flex;
+                align-items: center;
+                gap: 0.5rem;
+           }
+           .spinner-border-single-submit {
+                height: 1rem;
+                width: 1rem;
+                border-radius: 50%;
+                animation: 0.75s linear infinite spinner-border-single-submit;
+                border: 0.2rem solid currentColor;
+                border-right-color: transparent;
+           }
+           @keyframes spinner-border-single-submit {
+                to {
+                    transform: rotate(360deg);
+                }
+           }
+           `;
         document.head.appendChild(style);
     }
 
@@ -67,7 +49,7 @@ class SingleSubmit {
         // Add event listeners to buttons.
         singleSubmitBtns.forEach((singleSubmitBtn) => {
             const submitLoadingText = singleSubmitBtn.dataset.ssLoadingText || singleSubmitBtn.innerHTML;
-            const indicator = singleSubmitBtn.dataset.ssIndicator || 'spinner-border-single-submit';
+            const indicator = singleSubmitBtn.dataset.ssIndicator || `${this.options.spinnerClass}`;
             singleSubmitBtn.addEventListener('click', () => this.singleSubmitEvent(singleSubmitBtn, submitLoadingText, indicator));
         });
 
@@ -75,7 +57,7 @@ class SingleSubmit {
         singleSubmitForms.forEach((singleSubmitForm) => {
             const submitBtn = singleSubmitForm.querySelector('button[type="submit"]') as HTMLButtonElement;
             const submitLoadingText = singleSubmitForm.dataset.ssLoadingText || (submitBtn?.innerHTML || '');
-            const indicator = singleSubmitForm.dataset.ssIndicator || 'spinner-border-single-submit';
+            const indicator = singleSubmitForm.dataset.ssIndicator || `${this.options.spinnerClass}`;
 
             if (submitBtn) {
                 singleSubmitForm.addEventListener('submit', () => this.singleSubmitEvent(submitBtn, submitLoadingText, indicator));
@@ -85,19 +67,18 @@ class SingleSubmit {
 
     private singleSubmitEvent(target: HTMLButtonElement, loadingText: string, indicator: string): void {
         target.innerHTML = `
-        <span class="spinner-container-single-submit">
-            ${loadingText !== '' ? `<span>${loadingText}</span>` : ''}
-            <span class="${indicator}" role="status"></span>
-        </span>
-    `;
+            <span class="${this.options.containerClass}">
+                ${loadingText !== '' ? `<span>${loadingText}</span>` : ''}
+                <span class="${indicator}" role="status"></span>
+            </span>
+        `;
         target.disabled = true;
     }
 }
 
 interface SingleSubmitOptions {
-    containerStyles?: string;
-    borderStyles?: string;
-    growStyles?: string;
+    containerClass?: string;
+    spinnerClass?: string;
 }
 
 // Define the init method as a static method within the class
