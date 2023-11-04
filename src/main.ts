@@ -84,7 +84,7 @@ interface SingleSubmitOptions {
 // Define the init method as a static method within the class
 SingleSubmit.init = function (options: SingleSubmitOptions = {}): SingleSubmit {
     return new SingleSubmit(options);
-};
+}
 
 // noinspection JSUnusedGlobalSymbols
 export default SingleSubmit;
