@@ -2,10 +2,7 @@ class SingleSubmit {
     private options: SingleSubmitOptions;
     static init: (options?: SingleSubmitOptions) => SingleSubmit;
 
-    constructor(options: SingleSubmitOptions = {
-        containerClass: 'spinner-container-single-submit',
-        spinnerClass: 'spinner-border-single-submit'
-    }) {
+    constructor(options: SingleSubmitOptions = {}) {
         this.options = options;
         this.initialize();
     }
@@ -82,7 +79,10 @@ interface SingleSubmitOptions {
 }
 
 // Define the init method as a static method within the class
-SingleSubmit.init = function (options: SingleSubmitOptions = {}): SingleSubmit {
+SingleSubmit.init = function (options: SingleSubmitOptions = {
+    containerClass: 'spinner-container-single-submit',
+    spinnerClass: 'spinner-border-single-submit'
+}): SingleSubmit {
     return new SingleSubmit(options);
 }
 
