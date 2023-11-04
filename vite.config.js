@@ -1,12 +1,18 @@
-import {resolve} from 'path'
+import { resolve } from 'path';
 
 export default {
     build: {
         lib: {
-            entry: resolve(__dirname, 'lib/index.js'),
-            formats: ['cjs'],
-            fileName: 'single-submit.min',
+            name: 'single-submit',
+            entry: resolve(__dirname, 'src/main.ts'),
+            formats: ['cjs', 'umd'],
             minify: true,
-        }
-    }
-}
+        },
+        // Set the entryFileNames property here
+        rollupOptions: {
+            output: {
+                entryFileNames: 'single-submit.min.js',
+            },
+        },
+    },
+};
