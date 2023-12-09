@@ -40,15 +40,7 @@ class SingleSubmit {
     }
 
     private setupEventListeners(): void {
-        const singleSubmitBtns = document.querySelectorAll<HTMLButtonElement>('[data-ss-type="single-submit-button"]');
         const singleSubmitForms = document.querySelectorAll<HTMLFormElement>('[data-ss-type="single-submit-form"]');
-
-        // Add event listeners to buttons.
-        singleSubmitBtns.forEach((singleSubmitBtn) => {
-            const submitLoadingText = singleSubmitBtn.dataset.ssLoadingText || singleSubmitBtn.innerHTML;
-            const indicator = singleSubmitBtn.dataset.ssIndicator || `${this.options.spinnerClass}`;
-            singleSubmitBtn.addEventListener('click', () => this.singleSubmitEvent(singleSubmitBtn, submitLoadingText, indicator));
-        });
 
         // Add event listeners to forms.
         singleSubmitForms.forEach((singleSubmitForm) => {
