@@ -17,7 +17,7 @@ between users and the application.
 - Quick setup with a CDN link.
 - Supports customizing processing indicators.
 
-**Getting Started**
+**Installation**
 
 To start using Single Submit JS, simply include the following CDN script tag in your HTML:
 
@@ -26,7 +26,9 @@ To start using Single Submit JS, simply include the following CDN script tag in 
   src="https://cdn.jsdelivr.net/gh/priyashpatil/single-submit-js@2.0.0-alpha/dist/single-submit.min.js"
   crossorigin="anonymous"
   referrerpolicy="no-referrer"></script>
+```
 
+```html
 <!-- Initialize on dom load -->
 <script>
   document.addEventListener("DOMContentLoaded", () => {
