@@ -22,7 +22,7 @@ To start using Single Submit JS, simply include the following CDN script tag in 
 
 ```html
 <script
-  src="https://cdn.jsdelivr.net/gh/priyashpatil/single-submit-js@2.0.0/dist/single-submit.min.js"
+  src="https://cdn.jsdelivr.net/gh/priyashpatil/single-submit-js@2.0.0-alpha/dist/single-submit.min.js"
   crossorigin="anonymous"
   referrerpolicy="no-referrer"></script>
 
