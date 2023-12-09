@@ -28,7 +28,7 @@ To start using Single Submit JS, simply include the following CDN script tag in 
 
 After adding the script to your page, you have two options for implementing Single Submit JS functionality:
 
-**1. Form Submission:**
+**Form Submission:**
 
 Add the `data-ss-type="single-submit-form"` attribute to your form and optionally include the `data-loading-text`
 attribute to specify the text displayed during processing. Here's an example:
@@ -39,17 +39,6 @@ attribute to specify the text displayed during processing. Here's an example:
     <!-- Your form fields here -->
     <button type="submit">Submit</button>
 </form>
-```
-
-**2. Button Submission:**
-
-If you prefer to apply Single Submit JS to a single button instead of an entire form, add
-the `data-ss-type="single-submit-button"` attribute to the button element. Additionally, include the `data-loading-text`
-attribute to specify the processing text. For instance:
-
-```html
-
-<button data-ss-type="single-submit-button" data-loading-text="Loading...">Click Me</button>
 ```
 
 **Customize the Indicator**
