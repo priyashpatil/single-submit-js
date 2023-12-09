@@ -14,7 +14,7 @@ between users and the application.
 - Works independently of any CSS framework.
 - Compact file size of less than 1KB.
 - Quick setup with a CDN link.
-- Additional processing indicators.
+- Support for customizing processing indicators.
 
 **Getting Started**
 
