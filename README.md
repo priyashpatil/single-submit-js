@@ -1,6 +1,6 @@
-**Simplified Form Submission Handling**
+# Single Submit Js
 
-The Single Submit JavaScript library simplifies the handling of form submissions in server-side applications. In
+Single Submit Js library simplifies the handling of form submissions in server-side applications. In
 scenarios involving actions like file uploads or form submissions, waiting for server responses can be time-consuming.
 By integrating the Single Submit JS library, you can enhance user experiences by displaying a processing indicator and
 preventing duplicate submissions until a response is received. This results in a smoother and more efficient interaction
