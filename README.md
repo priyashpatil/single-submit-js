@@ -49,7 +49,7 @@ attribute to specify the text displayed during processing. Here's an example:
 </form>
 ```
 
-**Customize the Indicator**
+<!-- **Customize the Indicator**
 
 Out of the box, there are two available indicators: `spinner-border-single-submit` and `spinner-grow-single-submit`. By
 default, `spinner-border-single-submit` is used. You can switch to the grow-shrink indication by adding
@@ -61,7 +61,7 @@ the `data-ss-indicator` attribute to the form or button. For example:
   data-ss-indicator="spinner-grow-single-submit">
   Click Me
 </button>
-```
+``` -->
 
 By utilizing Single Submit JS through either of the above methods, you can enhance the user experience during
 server-side operations by providing visual feedback and preventing duplicate submissions.
