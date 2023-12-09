@@ -10,11 +10,12 @@ between users and the application.
 
 **Key Features**
 
-- Supports native HTML form validation.
+- Prevent duplicate form submission.
+- Native HTML form validation.
 - Works independently of any CSS framework.
 - Compact file size of less than 1KB.
 - Quick setup with a CDN link.
-- Support for customizing processing indicators.
+- Supports customizing processing indicators.
 
 **Getting Started**
 
