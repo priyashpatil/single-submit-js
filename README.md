@@ -14,16 +14,24 @@ between users and the application.
 - Works independently of any CSS framework.
 - Compact file size of less than 1KB.
 - Quick setup with a CDN link.
-- Recently added: Additional processing indicators.
+- Additional processing indicators.
 
 **Getting Started**
 
 To start using Single Submit JS, simply include the following CDN script tag in your HTML:
 
 ```html
+<script
+  src="https://cdn.jsdelivr.net/gh/priyashpatil/single-submit-js@2.0.0/dist/single-submit.min.js"
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"></script>
 
-<script src="https://cdn.jsdelivr.net/gh/priyashpatil/single-submit-js@1.0.1/dist/single-submit.min.js"
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- Initialize on dom load -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    SingleSubmit.init();
+  });
+</script>
 ```
 
 After adding the script to your page, you have two options for implementing Single Submit JS functionality:
@@ -34,10 +42,9 @@ Add the `data-ss-type="single-submit-form"` attribute to your form and optionall
 attribute to specify the text displayed during processing. Here's an example:
 
 ```html
-
 <form method="post" data-ss-type="single-submit-form">
-    <!-- Your form fields here -->
-    <button type="submit">Submit</button>
+  <!-- Your form fields here -->
+  <button type="submit">Submit</button>
 </form>
 ```
 
@@ -48,8 +55,11 @@ default, `spinner-border-single-submit` is used. You can switch to the grow-shri
 the `data-ss-indicator` attribute to the form or button. For example:
 
 ```html
-
-<button data-ss-type="single-submit-button" data-ss-indicator="spinner-grow-single-submit">Click Me</button>
+<button
+  data-ss-type="single-submit-button"
+  data-ss-indicator="spinner-grow-single-submit">
+  Click Me
+</button>
 ```
 
 By utilizing Single Submit JS through either of the above methods, you can enhance the user experience during
