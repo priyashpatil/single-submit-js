@@ -1,6 +1,6 @@
 {
   "name": "single-submit",
-  "version": "2.0.0",
+  "version": "2.0.0-alpha",
   "description": "The Single Submit JS library offers a simple solution for improving button functionality in server-side applications.",
   "type": "module",
   "scripts": {
