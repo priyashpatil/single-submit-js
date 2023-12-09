@@ -65,5 +65,5 @@ the `data-ss-indicator` attribute to the form or button. For example:
 </button>
 ``` -->
 
-By utilizing Single Submit JS through either of the above methods, you can enhance the user experience during
-server-side operations by providing visual feedback and preventing duplicate submissions.
+<!-- By utilizing Single Submit JS through either of the above methods, you can enhance the user experience during
+server-side operations by providing visual feedback and preventing duplicate submissions. -->
