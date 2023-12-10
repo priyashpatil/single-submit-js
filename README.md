@@ -64,11 +64,11 @@ const { SingleSubmitOptions } = require('single-submit');
 
 ## Configuring forms
 
-Add the `data-ss-type="single-submit-form"` attribute to your form and optionally include the `data-loading-text`
+Add the `data-ss-type="single-submit-form"` attribute to your form and optionally include the `data-ss-loading-text`
 attribute to specify the text displayed during processing. Here's an example:
 
 ```html
-<form method="post" data-ss-type="single-submit-form" data-loading-text="Submitting...">
+<form method="post" data-ss-type="single-submit-form" data-ss-loading-text="Submitting...">
     <!-- Your form fields here -->
     <button type="submit">Submit</button>
 </form>
@@ -86,7 +86,7 @@ class to customize the process indicator animation.
 
 ```html
 <!-- Assuming you are using Bootstrap -->
-<form data-ss-type="single-submit-button" data-ss-indicator="spinner-grow spinner-grow-sm">
+<form data-ss-type="single-submit-form" data-ss-indicator="spinner-grow spinner-grow-sm">
     <!-- Your form fields here -->
     <button type="submit">Submit</button>
 </form>
@@ -100,9 +100,25 @@ SingleSubmit.init({
 });
 ```
 
-To further customizing the implementation refer to API.
+To further customizing the implementation refer to configuration options.
 
-## API
+## Configuration Options
+
+### HTML Data Attributes
+
+**`data-ss-type`**
+
+**Required** with value of `single-submit-form`. This attribute is used to detect the forms on which to enable the single submit.
+
+**`data-ss-loading-text`**
+
+(Optional). Using this you can specify what text to show when the form is submitted and being processed. The default value is captured form the element's inner text. **If set this will override the options passed through `init` function**.
+
+**`data-ss-indicator`**
+
+(Optional). You can set a custom processing indicator. The default value is `spinner-border-single-submit` which is taken inspiration from Bootstrap framework. **If set this will override the options passed through `init` function**.
+
+### Init Options
 
 Single submit offers the following options. The `containerClass` allows to override the default container class
 `spinner-container-single-submit` for edge cases.
