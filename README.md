@@ -81,7 +81,7 @@ class to customize the process indicator animation.
 
 ```js
 SingleSubmit.init({
-processIndicatorClass: 'spinner-grow', // assuming you are using Bootstrap
+    processIndicatorClass: 'spinner-grow', // assuming you are using Bootstrap
 });
 ```
 
@@ -94,7 +94,7 @@ Single submit offers the following options. The `containerClass` allows to overr
 
 ```js
 interface SingleSubmitOptions {
-containerClass?: string;
-processIndicatorClass?: string;
+    containerClass?: string;
+    processIndicatorClass?: string;
 }
 ```
