@@ -46,7 +46,7 @@ class SingleSubmit {
         singleSubmitForms.forEach((singleSubmitForm) => {
             const submitBtn = singleSubmitForm.querySelector('button[type="submit"]') as HTMLButtonElement;
             const submitLoadingText = singleSubmitForm.dataset.ssLoadingText || (submitBtn?.innerHTML || '');
-            const indicator = singleSubmitForm.dataset.ssIndicator || `${this.options.spinnerClass}`;
+            const indicator = singleSubmitForm.dataset.ssIndicator || `${this.options.processIndicatorClass}`;
 
             if (submitBtn) {
                 singleSubmitForm.addEventListener('submit', () => this.singleSubmitEvent(submitBtn, submitLoadingText, indicator));
@@ -67,13 +67,13 @@ class SingleSubmit {
 
 interface SingleSubmitOptions {
     containerClass?: string;
-    spinnerClass?: string;
+    processIndicatorClass?: string;
 }
 
 // Define the init method as a static method within the class
 SingleSubmit.init = function (options: SingleSubmitOptions = {
     containerClass: 'spinner-container-single-submit',
-    spinnerClass: 'spinner-border-single-submit'
+    processIndicatorClass: 'spinner-border-single-submit'
 }): SingleSubmit {
     return new SingleSubmit(options);
 }
