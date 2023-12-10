@@ -1,37 +1,41 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Single Submit Js Example</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
+
 <body>
-<div class="container py-5" style="max-width: 420px;">
-    <h1 class="h3">Single Submit Js Example</h1>
-    <form method="post" action="https://priyashpatil.com/projects/single-submit-js-form" data-ss-type="single-submit-form">
-        <div class="mb-3">
-            <label class="form-label" for="email">Email <span class="text-danger">*</span></label>
-            <input type="email" class="form-control" name="email" id="email" value="john.doe@example.com" required
-                   autocomplete="true">
-        </div>
+    <div class="container py-5" style="max-width: 420px;">
+        <h1 class="h3">Single Submit Js Example</h1>
+        <form method="post" action="https://priyashpatil.com/projects/single-submit-js-form"
+            data-ss-type="single-submit-form">
+            <div class="mb-3">
+                <label class="form-label" for="email">Email <span class="text-danger">*</span></label>
+                <input type="email" class="form-control" name="email" id="email" value="john.doe@example.com" required
+                    autocomplete="true">
+            </div>
 
-        <div class="mb-3">
-            <label class="form-label" for="password">Password <span class="text-danger">*</span></label>
-            <input type="password" class="form-control" name="password" id="password" value="password" required>
-        </div>
+            <div class="mb-3">
+                <label class="form-label" for="password">Password <span class="text-danger">*</span></label>
+                <input type="password" class="form-control" name="password" id="password" value="password" required>
+            </div>
 
-        <button class="btn btn-primary" type="submit">Login</button>
-    </form>
-</div>
-<script src="./dist/single-submit.min.js"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        SingleSubmit.init();
-    });
-</script>
+            <button class="btn btn-primary" type="submit">Login</button>
+        </form>
+    </div>
+    <script src="./dist/single-submit.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            SingleSubmit.init();
+        });
+    </script>
 </body>
+
 </html>
