@@ -1,9 +1,8 @@
 # Single Submit Js
 
-Streamline form submissions in server-side applications with the Single Submit JS library. In scenarios involving
-actions like file uploads or form submissions, waiting for server responses can be time-consuming. By integrating this
-library, enhance user experiences with a processing indicator and prevent duplicate submissions until a response is
-received, resulting in a more efficient interaction.
+In scenarios involving actions like file uploads or form submissions, waiting for server responses can be
+time-consuming. By integrating this library, enhance user experiences with a processing indicator and prevent duplicate
+submissions until a response is received, resulting in a more efficient interaction.
 
 ![Single Submit Example](marketing/single-submit.gif)
 
@@ -86,15 +85,16 @@ processIndicatorClass: 'spinner-grow', // assuming you are using Bootstrap
 });
 ```
 
-To further customizing the implementation refer to API. 
+To further customizing the implementation refer to API.
 
 ## API
 
-Single submit offers the following options. The `containerClass` allows to override the default container class `spinner-container-single-submit` for edge cases.
+Single submit offers the following options. The `containerClass` allows to override the default container class
+`spinner-container-single-submit` for edge cases.
 
 ```js
 interface SingleSubmitOptions {
-    containerClass?: string;
-    processIndicatorClass?: string;
+containerClass?: string;
+processIndicatorClass?: string;
 }
 ```
