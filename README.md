@@ -86,7 +86,7 @@ class to customize the process indicator animation.
 
 ```html
 <!-- Assuming you are using Bootstrap -->
-<form data-ss-type="single-submit-button" data-ss-indicator="spinner-grow">
+<form data-ss-type="single-submit-button" data-ss-indicator="spinner-grow spinner-grow-sm">
     <!-- Your form fields here -->
     <button type="submit">Submit</button>
 </form>
@@ -96,7 +96,7 @@ class to customize the process indicator animation.
 
 ```js
 SingleSubmit.init({
-    processIndicatorClass: 'spinner-grow', // assuming you are using Bootstrap
+    processIndicatorClass: 'spinner-grow spinner-grow-sm', // assuming you are using Bootstrap
 });
 ```
 
