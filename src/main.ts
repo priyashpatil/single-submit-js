@@ -71,12 +71,11 @@ interface SingleSubmitOptions {
 }
 
 // Define the init method as a static method within the class
-SingleSubmit.init = function (options: SingleSubmitOptions = {
-    containerClass: 'spinner-container-single-submit',
-    processIndicatorClass: 'spinner-border-single-submit'
-}): SingleSubmit {
-    return new SingleSubmit(options);
+SingleSubmit.init = function (options: SingleSubmitOptions = {}): SingleSubmit {
+    return new SingleSubmit({
+        containerClass: options.containerClass || 'spinner-container-single-submit',
+        processIndicatorClass: options.processIndicatorClass || 'spinner-border-single-submit'
+    });
 }
-
 // noinspection JSUnusedGlobalSymbols
 export default SingleSubmit;
