@@ -18,21 +18,31 @@ submissions until a response is received, resulting in a more efficient interact
 ## Quick Start
 
 ```html
-<form method="post" data-ss-type="single-submit-form" data-loading-text="Submitting...">
-    <!-- Your form fields here -->
-    <button type="submit">Submit</button>
-</form>
+<!doctype html>
+<html lang="en">
 
-<!-- Add CDN link -->
-<script src="https://cdn.jsdelivr.net/gh/priyashpatil/single-submit-js@2.0.0-beta-2/dist/single-submit.min.js"
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<body>
+    <form method="post" 
+        data-ss-type="single-submit-form" 
+        data-loading-text="Submitting...">
+        <!-- Your form fields here -->
 
-<!-- Initialize on dom load -->
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-        SingleSubmit.init();
-    });
-</script>
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Add CDN link -->
+    <script src="https://cdn.jsdelivr.net/gh/priyashpatil/single-submit-js@2.0.0-beta-2/dist/single-submit.min.js"
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer"></script>
+
+    <!-- Initialize on load -->
+    <script type="text/javascript">
+        window.addEventListener("load", () => {
+            SingleSubmit.init();
+        });
+    </script>
+</body>
+</html>
 ```
 
 ## Installation
