@@ -15,11 +15,16 @@ submissions until a response is received, resulting in a more efficient interact
 - Quick setup with a CDN link.
 - Supports customizing processing indicators.
 
-## Installation
-
-**Using CDN link:**
+## Quick Start
 
 ```html
+<form method="post" data-ss-type="single-submit-form" data-loading-text="Submitting...">
+    <!-- Your form fields here -->
+    <button type="submit">Submit</button>
+</form>
+
+
+<!-- Add CDN link -->
 <script src="https://cdn.jsdelivr.net/gh/priyashpatil/single-submit-js@2.0.0-alpha/dist/single-submit.min.js"
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
@@ -29,6 +34,15 @@ submissions until a response is received, resulting in a more efficient interact
         SingleSubmit.init();
     });
 </script>
+```
+
+## Installation
+
+**Using CDN link:**
+
+```html
+<script src="https://cdn.jsdelivr.net/gh/priyashpatil/single-submit-js@2.0.0-alpha/dist/single-submit.min.js"
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 ```
 
 **Using npm package:**
