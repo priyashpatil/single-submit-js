@@ -1,6 +1,6 @@
 {
   "name": "single-submit",
-  "version": "2.0.0-beta-2",
+  "version": "2.0.0-beta-3",
   "description": "The Single Submit JS library offers a simple solution for improving button functionality in server-side applications.",
   "main": "src/main.ts",
   "type": "module",
@@ -16,7 +16,19 @@
   "keywords": [
     "single submit",
     "prevent duplicate submission",
-    "button progress"
+    "button progress",
+    "submit progress",
+    "npm",
+    "package",
+    "form submission",
+    "file uploads",
+    "processing indicator",
+    "duplicate submissions",
+    "HTML form validation",
+    "cdn",
+    "customization",
+    "spinner",
+    "bootstrap"
   ],
   "author": {
     "name": "Priyash Patil",
