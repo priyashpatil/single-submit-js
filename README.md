@@ -55,10 +55,11 @@ Once the package is installed, you can import the library using import or requir
 
 ```js
 // Using default default export.
-import SingleSubmit from 'single-submit';
+import SingleSubmit, { SingleSubmitOptions } from 'single-submit';
 
 // or If you use require for importing, only default export is available.
-const SingleSubmit = require('single-submit');
+const SingleSubmit = require('single-submit').default;
+const { SingleSubmitOptions } = require('single-submit');
 ```
 
 ## Configuring forms
