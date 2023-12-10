@@ -25,7 +25,7 @@ submissions until a response is received, resulting in a more efficient interact
 
 
 <!-- Add CDN link -->
-<script src="https://cdn.jsdelivr.net/gh/priyashpatil/single-submit-js@2.0.0-beta/dist/single-submit.min.js"
+<script src="https://cdn.jsdelivr.net/gh/priyashpatil/single-submit-js@2.0.0-beta-2/dist/single-submit.min.js"
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <!-- Initialize on dom load -->
@@ -41,7 +41,7 @@ submissions until a response is received, resulting in a more efficient interact
 **Using CDN link:**
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/priyashpatil/single-submit-js@2.0.0-beta_2/dist/single-submit.min.js"
+<script src="https://cdn.jsdelivr.net/gh/priyashpatil/single-submit-js@2.0.0-beta-2/dist/single-submit.min.js"
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 ```
 
