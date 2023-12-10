@@ -110,13 +110,13 @@ To further customizing the implementation refer to configuration options.
 
 **Required** with value of `single-submit-form`. This attribute is used to detect the forms on which to enable the single submit.
 
-**`data-ss-loading-text`**
+**`data-ss-loading-text`** (If set this will override the options passed through `init` function)
 
-(Optional). Using this you can specify what text to show when the form is submitted and being processed. The default value is captured form the element's inner text. **If set this will override the options passed through `init` function**.
+(Optional). Using this you can specify what text to show when the form is submitted and being processed. The default value is captured form the element's inner text.
 
-**`data-ss-indicator`**
+**`data-ss-indicator`** If set this will override the options passed through `init` function
 
-(Optional). You can set a custom processing indicator. The default value is `spinner-border-single-submit` which is taken inspiration from Bootstrap framework. **If set this will override the options passed through `init` function**.
+(Optional). You can set a custom processing indicator. The default value is `spinner-border-single-submit` which is taken inspiration from Bootstrap framework.
 
 ### Init Options
 
