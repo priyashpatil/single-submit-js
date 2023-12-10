@@ -4,16 +4,16 @@ In scenarios involving actions like file uploads or form submissions, waiting fo
 time-consuming. By integrating this library, enhance user experiences with a processing indicator and prevent duplicate
 submissions until a response is received, resulting in a more efficient interaction.
 
-![Single Submit Example](marketing/single-submit.gif)
-
 **Key Features**
 
-- Prevent duplicate form submission.
-- Native HTML form validation.
-- Works independently of any CSS framework.
-- Compact file size of less than 1KB.
-- Quick setup with a CDN link.
-- Supports customizing processing indicators.
+- Prevent duplicate form submission. 🚫
+- Native HTML form validation. ✅
+- Works independently of any CSS framework. 🌐
+- Compact file size of less than 1KB. 📦
+- Quick setup with a CDN link. 🚀
+- Supports customizing processing indicators. 🛠️
+
+![Single Submit Example](demo.gif)
 
 ## Quick Start
 
@@ -22,7 +22,6 @@ submissions until a response is received, resulting in a more efficient interact
     <!-- Your form fields here -->
     <button type="submit">Submit</button>
 </form>
-
 
 <!-- Add CDN link -->
 <script src="https://cdn.jsdelivr.net/gh/priyashpatil/single-submit-js@2.0.0-beta-2/dist/single-submit.min.js"
