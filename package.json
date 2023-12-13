@@ -40,6 +40,7 @@
   },
   "homepage": "https://github.com/priyashpatil/single-submit-js#readme",
   "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
   }
