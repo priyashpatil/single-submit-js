@@ -18,30 +18,31 @@ submissions until a response is received, resulting in a more efficient interact
 ## Quick Start
 
 ```html
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <body>
+    <form
+      method="post"
+      data-ss-type="single-submit-form"
+      data-loading-text="Submitting...">
+      <!-- Your form fields here -->
 
-<body>
-    <form method="post" 
-        data-ss-type="single-submit-form" 
-        data-loading-text="Submitting...">
-        <!-- Your form fields here -->
-
-        <button type="submit">Submit</button>
+      <button type="submit">Submit</button>
     </form>
 
     <!-- Add CDN link -->
-    <script src="https://cdn.jsdelivr.net/gh/priyashpatil/single-submit-js@2.0.0-beta-2/dist/single-submit.min.js"
-        crossorigin="anonymous" 
-        referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/single-submit@2.0.1/dist/single-submit.min.js"
+      integrity="sha256-Ig68U756uj/lhygwo6cvQoKZgrpunyLN1+Zpl+pWyRk="
+      crossorigin="anonymous"></script>
 
     <!-- Initialize on load -->
     <script type="text/javascript">
-        window.addEventListener("load", () => {
-            SingleSubmit.init();
-        });
+      window.addEventListener("load", () => {
+        SingleSubmit.init();
+      });
     </script>
-</body>
+  </body>
 </html>
 ```
 
@@ -50,8 +51,10 @@ submissions until a response is received, resulting in a more efficient interact
 **Using CDN link:**
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/priyashpatil/single-submit-js@2.0.0-beta-2/dist/single-submit.min.js"
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/single-submit@2.0.1/dist/single-submit.min.js"
+  integrity="sha256-Ig68U756uj/lhygwo6cvQoKZgrpunyLN1+Zpl+pWyRk="
+  crossorigin="anonymous"></script>
 ```
 
 **Using npm package:**
@@ -64,11 +67,11 @@ Once the package is installed, you can import the library using import or requir
 
 ```js
 // Using default default export.
-import SingleSubmit, { SingleSubmitOptions } from 'single-submit';
+import SingleSubmit, { SingleSubmitOptions } from "single-submit";
 
 // or If you use require for importing, only default export is available.
-const SingleSubmit = require('single-submit').default;
-const { SingleSubmitOptions } = require('single-submit');
+const SingleSubmit = require("single-submit").default;
+const { SingleSubmitOptions } = require("single-submit");
 ```
 
 ## Configuring forms
@@ -77,9 +80,12 @@ Add the `data-ss-type="single-submit-form"` attribute to your form and optionall
 attribute to specify the text displayed during processing. Here's an example:
 
 ```html
-<form method="post" data-ss-type="single-submit-form" data-ss-loading-text="Submitting...">
-    <!-- Your form fields here -->
-    <button type="submit">Submit</button>
+<form
+  method="post"
+  data-ss-type="single-submit-form"
+  data-ss-loading-text="Submitting...">
+  <!-- Your form fields here -->
+  <button type="submit">Submit</button>
 </form>
 ```
 
@@ -95,9 +101,11 @@ class to customize the process indicator animation.
 
 ```html
 <!-- Assuming you are using Bootstrap -->
-<form data-ss-type="single-submit-form" data-ss-indicator="spinner-grow spinner-grow-sm">
-    <!-- Your form fields here -->
-    <button type="submit">Submit</button>
+<form
+  data-ss-type="single-submit-form"
+  data-ss-indicator="spinner-grow spinner-grow-sm">
+  <!-- Your form fields here -->
+  <button type="submit">Submit</button>
 </form>
 ```
 
@@ -105,7 +113,7 @@ class to customize the process indicator animation.
 
 ```js
 SingleSubmit.init({
-    processIndicatorClass: 'spinner-grow spinner-grow-sm', // assuming you are using Bootstrap
+  processIndicatorClass: "spinner-grow spinner-grow-sm", // assuming you are using Bootstrap
 });
 ```
 
@@ -134,7 +142,7 @@ Single submit offers the following options. The `containerClass` allows to overr
 
 ```js
 interface SingleSubmitOptions {
-    containerClass?: string;
-    processIndicatorClass?: string;
+  containerClass?: string;
+  processIndicatorClass?: string;
 }
 ```
