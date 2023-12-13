@@ -1,8 +1,17 @@
 {
   "name": "single-submit",
-  "version": "2.0.0",
+  "version": "2.0.1-beta-1",
   "description": "The Single Submit JS library offers a simple solution for improving button functionality in server-side applications.",
-  "main": "src/main.ts",
+  "main": "dist/single-submit.js",
+  "module": "dist/single-submit.js",
+  "unpkg": "dist/single-submit.min.js",
+  "jsdelivr": "dist/single-submit.min.js",
+  "files": [
+    "dist/single-submit.js",
+    "dist/single-submit.min.js",
+    "dist/umd/single-submit.umd.cjs",
+    "dist/umd/single-submit.umd.min.cjs"
+  ],
   "type": "module",
   "scripts": {
     "dev": "vite",
