@@ -13,7 +13,7 @@ submissions until a response is received, resulting in a more efficient interact
 - Quick setup with a CDN link. 🚀
 - Supports customizing processing indicators. 🛠️
 
-![Single Submit Example](demo.gif)
+![Single Submit Example](./demo.gif)
 
 ## Quick Start
 
